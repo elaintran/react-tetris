@@ -1,8 +1,11 @@
 import React from "react";
+import Tetris from "./components/Tetris";
 
 function App() {
     return (
-        <div className="App"></div>
+        <div>
+            <Tetris />
+        </div>
     );
 }
 
