@@ -1,16 +1,19 @@
 import React, { Component } from "react";
+import Block from "../Block";
 import tetriminos from "../../tetriminos.json";
 
-const checkTetriminos = () => {
-    const pieceIndex = Math.floor(Math.random() * tetriminos.length);
-    console.log(tetriminos[pieceIndex]);
+const getBlock = () => {
+    const blockIndex = Math.floor(Math.random() * tetriminos.length);
+    return tetriminos[blockIndex];
 }
 
 class Cell extends Component {
     render() {
         return (
             <div>
-                cell
+                <Block block={getBlock().block}>Cell</Block>
+                {/* cell */}
+                {/* {getBlock().block} */}
             </div>
         );
     }
