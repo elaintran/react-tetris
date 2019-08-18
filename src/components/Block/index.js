@@ -1,9 +1,9 @@
 import React from "react";
-import "./style.css";
+import "./style.sass";
 
 function Block(props) {
     return (
-        <div className={`${props.block.toLowerCase()}-block`}>
+        <div className={`${props.block.toLowerCase()}-block block`}>
             {props.children}
         </div>
     );

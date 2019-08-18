@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Cell from "../Cell";
+import "./style.sass";
 
 const stageWidth = 10;
 const stageHeight = 20;
@@ -15,12 +16,11 @@ class Stage extends Component {
 
     render() {
         return (
-            <div>
+            <div className="stage">
                 {this.createStage().map(row =>
                     row.map((cell, x) =>
                         <Cell key={x} type={cell[0]} />
                 ))}
-                {/* <Cell /> */}
             </div>
         );
     }
