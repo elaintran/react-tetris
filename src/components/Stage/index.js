@@ -21,6 +21,7 @@ class Stage extends Component {
                     row.map((cell, x) =>
                         <Cell key={x} type={cell[0]} />
                 ))}
+                {console.log(this.createStage().length)}
             </div>
         );
     }

@@ -13,9 +13,7 @@ class Cell extends Component {
     render() {
         return (
             <div>
-                <Block block={getBlock().block}>Cell</Block>
-                {/* cell */}
-                {/* {getBlock().block} */}
+                <Block block={getBlock().block} />
             </div>
         );
     }
