@@ -12,9 +12,8 @@ const getBlock = () => {
 class Cell extends Component {
     render() {
         return (
-            <div>
-                <Block block={getBlock().block} />
-            </div>
+            // <Block block={getBlock().block} />
+            <Block />
         );
     }
 }

@@ -1,10 +1,18 @@
 import React from "react";
 import "./style.sass";
 
-function Block(props) {
+const checkBlock = block => {
+    if (block === undefined) {
+        return <div className="block"></div>;
+    } else {
+        return <div className={`${block.toLowerCase()}-block block`}></div>;
+    }
+}
+
+const Block = props => {
     return (
-        <div className={`${props.block.toLowerCase()}-block block`}>
-            {props.children}
+        <div>
+            {checkBlock(props.block)}
         </div>
     );
 }

@@ -1,11 +1,12 @@
 import React from "react";
 import Stage from "../Stage";
+import FlexWrapper from "../FlexWrapper";
 
 const Tetris = () => {
     return (
-        <div>
+        <FlexWrapper>
             <Stage />
-        </div>
+        </FlexWrapper>
     );
 }
 
