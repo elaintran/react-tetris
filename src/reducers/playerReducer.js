@@ -8,10 +8,7 @@ const getBlock = () => {
 }
 
 const defaultState = {
-    position: {
-        x: 0,
-        y: 0
-    },
+    position: { x: 0, y: 0 },
     block: getBlock().block,
     collision: false
 }
